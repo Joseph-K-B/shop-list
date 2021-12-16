@@ -1,11 +1,11 @@
 import { useReducer } from "react"
-import ListControls from "../../components/controls/ListControls";
+import AddControls from "../../components/controls/AddControls";
 import ShopList from "../../components/list/ShopList";
 import itemReducer from "../../utils/ItemReducer"
 
 const initialState = [
-  {id: 1, name: 'test', done: false},
-  {id: 2, name: 'test-2', done: false},
+//   {id: 1, name: 'test', done: false},
+//   {id: 2, name: 'test-2', done: false},
 ]
 
 function Shopping() {
@@ -35,7 +35,7 @@ function Shopping() {
     return(
       <>
         <h1>Shopping List</h1>
-        <ListControls onAdded={handleAdded} />
+        <AddControls onAdded={handleAdded} />
         <ShopList items={items} onUpdate={handleUpdate} onDeleteItem={handleDelete}/>
       </>
     )

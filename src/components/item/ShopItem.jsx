@@ -1,11 +1,11 @@
-import ItemControls from "../controls/ItemControls";
+import EditControls from "../controls/EditControls";
 
 function ShopItem({item, onChange, onDelete}) {
 
   return(
     <>
       <h3>{item.name}</h3>
-      <ItemControls item={item} onChange={onChange} onDelete={onDelete}/>     
+      <EditControls item={item} onChange={onChange} onDelete={onDelete}/>     
     </>
   )
 }

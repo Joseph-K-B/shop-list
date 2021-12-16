@@ -1,4 +1,4 @@
-import ListControls from "../../components/controls/ListControls";
+import ListControls from "../../components/controls/AddControls";
 import ShopList from "../../components/list/ShopList";
 import Shopping from "../Shopping/Shopping";
 

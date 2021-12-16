@@ -1,6 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
-function ListControls({ onAdded }) {
+function AddControls({ onAdded }) {
   const[name, setName] = useState('')
 
   const handleSubmit = (e) => {
@@ -22,4 +22,4 @@ function ListControls({ onAdded }) {
   );
 };
 
-export default ListControls;
+export default AddControls;
