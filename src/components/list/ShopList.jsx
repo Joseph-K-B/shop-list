@@ -1,7 +1,6 @@
 import ShopItem from "../item/ShopItem";
 
-function ShopList({items, onUpdate, onDeleteItem}) {    
-    console.log(items)
+function ShopList({items, onUpdate, onDeleteItem}) {
     return(
         <>        
         <ul>

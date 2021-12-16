@@ -7,7 +7,6 @@ function ItemControls({item, onChange, onDelete}) {
         <>
         <button type='button' onClick={() => onDelete(item.id)}>Remove</button>
         {displayUpdate ? (
-            // <form onSubmit={handleUpdateSubmit}>
             <>
                 <input 
                     type='text'
@@ -20,7 +19,6 @@ function ItemControls({item, onChange, onDelete}) {
                         })
                     }}/>
                 <button onClick={() => setDisplayUpdate(false)} aria-label={`update ${item}`}>Update</button>
-            {/* </form> */}
             </>
         ) : (            
             <button onClick={() => setDisplayUpdate(true)}>Edit</button>

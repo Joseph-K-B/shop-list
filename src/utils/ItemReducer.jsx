@@ -18,6 +18,9 @@ function itemReducer(items, action) {
                 return item
             })
         }
+        case 'deleted' : {
+            return items.filter((item) => item.id !== action.id)
+        }
 
         default: {
             throw new Error('missing information')
