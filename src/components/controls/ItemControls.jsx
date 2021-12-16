@@ -2,9 +2,19 @@ import { useState } from "react";
 
 function ItemControls({item, onChange, onDelete}) {
     const[displayUpdate, setDisplayUpdate] = useState(false)
+    console.log(item)
 
     return (
         <>
+        <input 
+            type='checkbox' 
+            value={item.done} 
+            onChange={(e) => {
+                        onChange({
+                        ...item,
+                        done: e.target.checked
+                        })
+                    }}/>
         <button type='button' onClick={() => onDelete(item.id)}>Remove</button>
         {displayUpdate ? (
             <>
