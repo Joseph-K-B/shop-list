@@ -1,6 +1,6 @@
 import ShopItem from "../item/ShopItem";
 
-function ShopList({items}) {    
+function ShopList({items, onUpdate, onDeleteItem}) {    
     console.log(items)
     return(
         <>        
@@ -10,7 +10,7 @@ function ShopList({items}) {
             ) : (
                 items.map((item) => (
                     <li key={item.id}>
-                        <ShopItem item={item}/>
+                        <ShopItem item={item} onChange={onUpdate} onDelete={onDeleteItem}/>
                     </li>
                 ))
             )}

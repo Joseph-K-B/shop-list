@@ -3,24 +3,37 @@ import ListControls from "../../components/controls/ListControls";
 import ShopList from "../../components/list/ShopList";
 import itemReducer from "../../utils/ItemReducer"
 
-const initialState = []
+const initialState = [{id: 1, name: 'test', done: false}]
 
 function Shopping() {
     const [items, dispatch] = useReducer(itemReducer, initialState);
     
-    const handleAdded = (itemName) => {
+    const handleAdded = (name) => {
       dispatch({
         type: 'added',
         id: items.length + 1,
-        itemName,
+        name,
       });
-    }
+    };
+
+    const handleUpdate = (item) => 
+    dispatch({
+      type: 'changed',
+      item
+    });
+
+    const handleDelete = (id) => {
+      dispatch({
+        type: 'deleted',
+        id
+      });
+    };
 
     return(
       <>
         <h1>Shopping List</h1>
         <ListControls onAdded={handleAdded} />
-        <ShopList items={items}/>
+        <ShopList items={items} onUpdate={handleUpdate} onDeleteItem={handleDelete}/>
       </>
     )
 }

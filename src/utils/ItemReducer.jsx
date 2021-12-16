@@ -5,10 +5,18 @@ function itemReducer(items, action) {
                 ...items,
                 {
                 id: action.id,
-                name: action.itemName,
+                name: action.name,
                 done: false
                 }
             ]
+        }
+        case 'changed' : {
+            return items.map((item) => {
+                if(item.id === action.item.id) {
+                    return action.item
+                }
+                return item
+            })
         }
 
         default: {
