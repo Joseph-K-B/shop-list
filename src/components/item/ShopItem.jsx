@@ -1,19 +1,10 @@
 import ItemControls from "../controls/ItemControls";
 
-function ShopItem() {
-
-  const handleAddItem = () => {
-    dispatchEvent({
-      type:'add'
-    })
-  }
+function ShopItem({item}) {
 
   return(
     <>
-      <h3>Item</h3>
-      <p>Department</p>
-      <p>Amount</p>
-      <ItemControls />
+      <h3>{item.name}</h3>     
     </>
   )
 }
