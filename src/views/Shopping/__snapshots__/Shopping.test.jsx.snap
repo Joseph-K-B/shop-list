@@ -2,64 +2,92 @@
 
 exports[`allows user to add, update, and delete items 1`] = `
 <div>
-  <h1>
-    Shopping List
-  </h1>
-  <form>
-    <input
-      aria-label="new item input"
-      type="text"
-      value=""
-    />
-    <button
-      aria-label="submit new item"
-      type="submit"
-    >
-      Add Item
-    </button>
-  </form>
-  <h2 />
-  <ul
-    class="shopList"
+  <section
+    class="shop"
   >
-    <li
-      class="listItem"
+    <div
+      class="add"
     >
-      <section
-        aria-label="list-item"
-      >
-        <div
-          class="itemInfo"
-        >
-          <h3>
-            namebetter-name
-          </h3>
-        </div>
-        <div
-          class="itemControls"
-        >
+      <section>
+        <h3>
+          Sign in to create list
+        </h3>
+        <form>
           <div>
             <input
-              type="checkbox"
-              value="false"
+              aria-label="name-input"
+              placeholder="name"
+              type="text"
+              value=""
             />
-          </div>
-          <div>
             <button
-              aria-label="open delete form"
-              type="button"
+              type="submit"
             >
-              Remove
+              Log
             </button>
           </div>
-          <button
-            aria-label="open update form"
-          >
-            Edit
-          </button>
-        </div>
+          
+        </form>
       </section>
-    </li>
-  </ul>
+      <form>
+        <input
+          aria-label="new item input"
+          type="text"
+          value=""
+        />
+        <button
+          aria-label="submit new item"
+          type="submit"
+        >
+          Add Item
+        </button>
+      </form>
+    </div>
+    <div>
+      <h2 />
+      <ul
+        class="shopList"
+      >
+        <li
+          class="listItem"
+        >
+          <section
+            aria-label="list-item"
+          >
+            <div
+              class="itemInfo"
+            >
+              <h3>
+                namebetter-name
+              </h3>
+            </div>
+            <div
+              class="itemControls"
+            >
+              <div>
+                <input
+                  type="checkbox"
+                  value="false"
+                />
+              </div>
+              <div>
+                <button
+                  aria-label="open delete form"
+                  type="button"
+                >
+                  Remove
+                </button>
+              </div>
+              <button
+                aria-label="open update form"
+              >
+                Edit
+              </button>
+            </div>
+          </section>
+        </li>
+      </ul>
+    </div>
+  </section>
 </div>
 `;

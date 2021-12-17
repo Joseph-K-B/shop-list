@@ -1,0 +1,11 @@
+.title {
+    text-align: center;
+    font-size: 3rem;
+    background-color: indigo;
+}
+
+main {
+    height: 35em;
+    color: #A3A6B1;
+    background-color: #455561;
+}

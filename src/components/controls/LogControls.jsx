@@ -26,9 +26,7 @@ const LogControls = () => {
             <button type='submit'>Log</button>
         </div>
     );
-
-    console.log(userName)
-    
+   
 
     const loggedMsg = userName ? `List for ${userName}` : 'Sign in to create list';
 

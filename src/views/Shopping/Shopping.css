@@ -1,0 +1,11 @@
+.shop {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    text-align: center;
+}
+
+.add {
+    height: 10rem;
+    max-height: 10rem;
+    background-color: lawngreen;
+}

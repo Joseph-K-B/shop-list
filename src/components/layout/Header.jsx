@@ -1,6 +1,10 @@
+import css from './Header.css';
+
 function Header(){
     return(
-        <h1>Header</h1>
+        <header className={css.head}>
+            <h1 className={css.welcome}>Welcome</h1>
+        </header>
     )
 }
 

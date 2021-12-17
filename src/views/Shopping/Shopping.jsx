@@ -1,7 +1,9 @@
 import React, { useReducer } from "react";
 import AddControls from "../../components/controls/AddControls";
+import { LogControls } from "../../components/controls/LogControls";
 import ShopList from "../../components/list/ShopList";
 import itemReducer from "../../utils/ItemReducer"
+import css from './Shopping.css';
 
 const initialState = [
 //   {id: 1, name: 'test', done: false},
@@ -34,9 +36,15 @@ function Shopping() {
 
     return(
       <>
-        <h1>Shopping List</h1>
-        <AddControls onAdded={handleAdded} />
-        <ShopList items={items} onUpdate={handleUpdate} onDeleteItem={handleDelete}/>
+        <section className={css.shop}>
+          <div className={css.add}>
+            <LogControls />
+            <AddControls onAdded={handleAdded} />
+          </div>
+          <div>
+          <ShopList items={items} onUpdate={handleUpdate} onDeleteItem={handleDelete}/>          
+          </div>
+        </section>
       </>
     )
 }
