@@ -18,6 +18,10 @@ it('allows user to add, update, and delete items', async () => {
     userEvent.type(nameInput, 'name');
     userEvent.click(submitBtn);
 
+    const firstItem = await screen.findByText(/name/i);
+
+    expect(firstItem).toBeInTheDocument();
+
     const deleteBtn = await screen.findByLabelText(/open delete form/i);
     const editBtn = await screen.findByLabelText(/open update form/i);
     const newItem = await screen.findByLabelText(/list-item/i);
@@ -33,6 +37,10 @@ it('allows user to add, update, and delete items', async () => {
     
     userEvent.type(updateInput, 'better-name');
     userEvent.click(updateBtn);
+
+    const secondItem = await screen.findByText(/better-name/i);
+
+    expect(secondItem).toBeInTheDocument();
 
     expect(deleteBtn).toBeInTheDocument();
     expect(nameInput).toBeInTheDocument();
