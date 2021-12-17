@@ -2,16 +2,20 @@
 
 exports[`renders controls to edit item 1`] = `
 <div>
-  <input
-    type="checkbox"
-    value="false"
-  />
-  <button
-    aria-label="open delete form"
-    type="button"
-  >
-    Remove
-  </button>
+  <div>
+    <input
+      type="checkbox"
+      value="false"
+    />
+  </div>
+  <div>
+    <button
+      aria-label="open delete form"
+      type="button"
+    >
+      Remove
+    </button>
+  </div>
   <button
     aria-label="open update form"
   >

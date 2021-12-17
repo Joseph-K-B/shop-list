@@ -1,11 +1,11 @@
-import ListControls from "../../components/controls/AddControls";
-import ShopList from "../../components/list/ShopList";
+import { LogControls } from "../../components/controls/LogControls";
 import Shopping from "../Shopping/Shopping";
 
 function Home() {
   return (
     <>
       <h1>Home</h1>
+      <LogControls />
       <Shopping />
     </>
   )

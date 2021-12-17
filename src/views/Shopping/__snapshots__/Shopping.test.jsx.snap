@@ -18,29 +18,46 @@ exports[`allows user to add, update, and delete items 1`] = `
       Add Item
     </button>
   </form>
-  <ul>
-    <li>
+  <h2 />
+  <ul
+    class="shopList"
+  >
+    <li
+      class="listItem"
+    >
       <section
         aria-label="list-item"
       >
-        <h3>
-          namebetter-name
-        </h3>
-        <input
-          type="checkbox"
-          value="false"
-        />
-        <button
-          aria-label="open delete form"
-          type="button"
+        <div
+          class="itemInfo"
         >
-          Remove
-        </button>
-        <button
-          aria-label="open update form"
+          <h3>
+            namebetter-name
+          </h3>
+        </div>
+        <div
+          class="itemControls"
         >
-          Edit
-        </button>
+          <div>
+            <input
+              type="checkbox"
+              value="false"
+            />
+          </div>
+          <div>
+            <button
+              aria-label="open delete form"
+              type="button"
+            >
+              Remove
+            </button>
+          </div>
+          <button
+            aria-label="open update form"
+          >
+            Edit
+          </button>
+        </div>
       </section>
     </li>
   </ul>

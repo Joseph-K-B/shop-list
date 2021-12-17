@@ -4,14 +4,24 @@ function EditControls({item, onChange, onDelete}) {
     const[displayUpdate, setDisplayUpdate] = useState(false)
     return (
         <>
-        <input 
-            type='checkbox' 
-            value={item.done} 
-            onChange={(e) => 
-                {onChange({...item, done: e.target.checked})
-            }}
-        />
-        <button type='button' aria-label='open delete form' onClick={() => onDelete(item.id)}>Remove</button>
+        <div>
+            <input 
+                type='checkbox' 
+                value={item.done} 
+                onChange={(e) => 
+                    {onChange({...item, done: e.target.checked})
+                }}
+            />
+        </div>
+        <div>
+            <button 
+                type='button' 
+                aria-label='open delete form' 
+                onClick={() => onDelete(item.id)}
+            >
+                Remove
+            </button>
+        </div>
         {displayUpdate ? (
             <>
                 <input 

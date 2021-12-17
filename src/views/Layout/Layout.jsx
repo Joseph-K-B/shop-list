@@ -2,11 +2,11 @@ import Footer from "../../components/layout/Footer";
 import Header from "../../components/layout/Header";
 import Home from "../Home/Home";
 
-function Layout(){
+function Layout({ children }){
     return(
         <>
             <Header />
-            <Home />
+             <main>{children}</main>
             <Footer />      
         </>
     )

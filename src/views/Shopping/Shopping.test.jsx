@@ -1,11 +1,14 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import Shopping from './Shopping';
+import userEvent from '@testing-library/user-event';
+import { UserProvider } from '../../context/UserCtx';
+import { render, screen } from '@testing-library/react';
 
 it('allows user to add, update, and delete items', async () => {
     const {container} = render(
-        <Shopping items={[{id: 1, name: 'test', done: false}]}/>
+        <UserProvider>
+            <Shopping />
+        </UserProvider>
     );
 
     const nameInput = screen.getByLabelText(/new item input/i);
