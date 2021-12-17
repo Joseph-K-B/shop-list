@@ -4,7 +4,7 @@
 }
 
 .listItem {
-    background-color: hotpink;
+    background-color: #50717b;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,9 +15,6 @@
 }
 
 .itemInfo {
-    background-color: aqua;
-}
-
-.itemControls {
-    background-color: green;
+    font-size: 1.5rem;
+    color: black;
 }
