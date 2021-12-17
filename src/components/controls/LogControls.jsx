@@ -23,7 +23,7 @@ const LogControls = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
             />
-            <button type='submit'>Log</button>
+            <button type='submit' aria-label='log-button'>Log</button>
         </div>
     );
    

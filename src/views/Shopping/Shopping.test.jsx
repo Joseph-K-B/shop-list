@@ -11,8 +11,14 @@ it('allows user to add, update, and delete items', async () => {
         </UserProvider>
     );
 
-    const nameInput = screen.getByLabelText(/new item input/i);
-    const submitBtn = screen.getByLabelText(/submit new item/i);
+    const userInput = screen.getByLabelText(/name-input/i)
+    const logBtn = screen.getByLabelText(/log-button/i)
+
+    userEvent.type(userInput, 'Izzie');
+    userEvent.click(logBtn);
+
+    const nameInput = await screen.findByLabelText(/new item input/i);
+    const submitBtn = await screen.findByLabelText(/submit new item/i);
 
 
     userEvent.type(nameInput, 'name');

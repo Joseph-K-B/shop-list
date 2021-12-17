@@ -4,8 +4,15 @@
     background-color: indigo;
 }
 
+header {
+    min-height: 10vh;
+    min-width: 95vw;
+    background-color: #587B7F;
+}
+
 main {
-    height: 35em;
+    min-height: 100vh;
+    min-width: 100vw;
     color: #A3A6B1;
     background-color: #455561;
 }

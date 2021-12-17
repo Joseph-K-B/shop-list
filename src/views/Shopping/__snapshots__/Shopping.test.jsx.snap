@@ -10,23 +10,14 @@ exports[`allows user to add, update, and delete items 1`] = `
     >
       <section>
         <h3>
-          Sign in to create list
+          List for Izzie
         </h3>
         <form>
-          <div>
-            <input
-              aria-label="name-input"
-              placeholder="name"
-              type="text"
-              value=""
-            />
-            <button
-              type="submit"
-            >
-              Log
-            </button>
-          </div>
-          
+          <button>
+            Not 
+            Izzie
+            ?
+          </button>
         </form>
       </section>
       <form>
@@ -44,7 +35,6 @@ exports[`allows user to add, update, and delete items 1`] = `
       </form>
     </div>
     <div>
-      <h2 />
       <ul
         class="shopList"
       >

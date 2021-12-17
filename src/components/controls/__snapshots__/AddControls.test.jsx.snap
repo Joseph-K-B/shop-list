@@ -2,6 +2,18 @@
 
 exports[`renders controls to input item 1`] = `
 <div>
+  <section>
+    <h3>
+      List for Izzie
+    </h3>
+    <form>
+      <button>
+        Not 
+        Izzie
+        ?
+      </button>
+    </form>
+  </section>
   <form>
     <input
       aria-label="new item input"

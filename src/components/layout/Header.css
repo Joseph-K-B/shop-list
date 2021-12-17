@@ -1,11 +1,12 @@
-.head{
+/* .head{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 2.5em;
-    background-color: #3A435E;
+    height: fit-content;
+    width: fit-content;
+    color: #D3D0CB;
     margin: 2.5%;
-}
+} */
 
 .welcome {
     font-size: 3rem;

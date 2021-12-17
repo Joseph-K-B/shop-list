@@ -1,11 +1,21 @@
 .shop {
     display: grid;
+    max-width: 100vw;
     grid-template-columns: 1fr 3fr;
     text-align: center;
 }
 
 .add {
-    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-height: 10rem;
+    max-width: 10rem;
+    border: 0.25rem black solid;
     background-color: lawngreen;
+    padding: 5%;
+}
+
+input {
+    max-width: 8rem;
 }

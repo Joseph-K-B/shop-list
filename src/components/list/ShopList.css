@@ -1,6 +1,6 @@
 .shopList {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .listItem {
@@ -11,6 +11,7 @@
     text-align: center;
     border: 0.15rem solid black;
     margin: 5%;
+    padding: 3%;
 }
 
 .itemInfo {

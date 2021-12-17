@@ -4,11 +4,9 @@ import ShopItem from "../item/ShopItem";
 import css from './ShopList.css';
 
 function ShopList({items, onUpdate, onDeleteItem}) {
-    const {userName} = useUser();
-    // console.log('ITEMS', items)
+
     return(
         <>        
-        <h2>{userName}</h2>
         <ul className={css.shopList}>        
             {!items ? (
                 <h1>Add items to your list {userName}</h1>

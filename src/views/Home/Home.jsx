@@ -5,8 +5,10 @@ import css from './Home.css'
 function Home() {
   return (
     <>
+    <main>
       <h1 className={css.title}>Shopping List</h1>
       <Shopping />
+    </main>
     </>
   )
 }
