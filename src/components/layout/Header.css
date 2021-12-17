@@ -1,14 +1,6 @@
-/* .head{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: fit-content;
-    width: fit-content;
-    color: #D3D0CB;
-    margin: 2.5%;
-} */
-
 .welcome {
+    color: white;
     font-size: 3rem;
+    padding: 1.5%;
 }
 

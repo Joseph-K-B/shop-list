@@ -6,6 +6,7 @@
 }
 
 .add {
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -18,5 +19,5 @@
 }
 
 input {
-    max-width: 3.5rem;
+    max-width: 11vw;
 }
