@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`allows user to add, update, and delete items 1`] = `
+<div>
+  <h1>
+    Shopping List
+  </h1>
+  <form>
+    <input
+      aria-label="new item input"
+      type="text"
+      value=""
+    />
+    <button
+      aria-label="submit new item"
+      type="submit"
+    >
+      Add Item
+    </button>
+  </form>
+  <ul>
+    <li>
+      <section
+        aria-label="list-item"
+      >
+        <h3>
+          namebetter-name
+        </h3>
+        <input
+          type="checkbox"
+          value="false"
+        />
+        <button
+          aria-label="open delete form"
+          type="button"
+        >
+          Remove
+        </button>
+        <button
+          aria-label="open update form"
+        >
+          Edit
+        </button>
+      </section>
+    </li>
+  </ul>
+</div>
+`;

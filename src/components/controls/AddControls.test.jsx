@@ -2,7 +2,7 @@ import React from 'react';
 import { screen, render } from '@testing-library/react';
 import AddControls from './AddControls';
 
-it('renders controls to input user', () => {
+it('renders controls to input item', () => {
     const {container} = render(
         <AddControls />
     );

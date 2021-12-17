@@ -1,4 +1,4 @@
-import { useReducer } from "react"
+import React, { useReducer } from "react";
 import AddControls from "../../components/controls/AddControls";
 import ShopList from "../../components/list/ShopList";
 import itemReducer from "../../utils/ItemReducer"

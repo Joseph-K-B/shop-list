@@ -1,3 +1,4 @@
+import React from 'react';
 import ShopItem from "../item/ShopItem";
 
 function ShopList({items, onUpdate, onDeleteItem}) {

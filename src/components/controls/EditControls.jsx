@@ -11,7 +11,7 @@ function EditControls({item, onChange, onDelete}) {
                 {onChange({...item, done: e.target.checked})
             }}
         />
-        <button type='button' onClick={() => onDelete(item.id)}>Remove</button>
+        <button type='button' aria-label='open delete form' onClick={() => onDelete(item.id)}>Remove</button>
         {displayUpdate ? (
             <>
                 <input 
@@ -24,10 +24,10 @@ function EditControls({item, onChange, onDelete}) {
                             name: e.target.value
                         })
                     }}/>
-                <button onClick={() => setDisplayUpdate(false)} aria-label={`update ${item}`}>Update</button>
+                <button onClick={() => setDisplayUpdate(false)} aria-label='apply update'>Update</button>
             </>
         ) : (            
-            <button onClick={() => setDisplayUpdate(true)}>Edit</button>
+            <button aria-label='open update form' onClick={() => setDisplayUpdate(true)}>Edit</button>
         )}
         </>
     )

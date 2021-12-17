@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders controls to input user 1`] = `
+exports[`renders controls to input item 1`] = `
 <div>
   <form>
     <input
