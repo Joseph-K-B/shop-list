@@ -23,7 +23,10 @@ main {
 }
 
 footer {
+    margin-top: 3%;
+    text-align: center;
     min-height: 12vh;
     min-width: 100vw;
     background-color: #587B7F;
+    border-radius: 85% / 10% 85% 0 0;
 }
