@@ -6,6 +6,7 @@
 
 header {
     min-height: 10vh;
+    height: 7rem;
     min-width: 95vw;
     background-color: #587B7F;
 }
@@ -15,4 +16,8 @@ main {
     min-width: 100vw;
     color: #A3A6B1;
     background-color: #212121;
+}
+
+footer {
+    background-color: #587B7F;
 }

@@ -14,8 +14,9 @@
     border: 0.25rem black solid;
     background-color: #50717b;
     padding: 5%;
+    margin: 5%;
 }
 
 input {
-    max-width: 8rem;
+    max-width: 3.5rem;
 }
