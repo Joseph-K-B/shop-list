@@ -18,7 +18,8 @@ function EditControls({item, onChange, onDelete}) {
         </div>
         <div>
             <button 
-                type='button' 
+                type='button'
+                className={css.editBtn} 
                 aria-label='open delete form' 
                 onClick={() => onDelete(item.id)}
             >
@@ -37,10 +38,16 @@ function EditControls({item, onChange, onDelete}) {
                             name: e.target.value
                         })
                     }}/>
-                <button onClick={() => setDisplayUpdate(false)} aria-label='apply update'>Update</button>
+                <button className={css.editBtn} onClick={() => setDisplayUpdate(false)} aria-label='apply update'>Update</button>
             </>
         ) : (            
-            <button aria-label='open update form' onClick={() => setDisplayUpdate(true)}>Edit</button>
+            <button 
+                className={css.editBtn}
+                aria-label='open update form' 
+                onClick={() => setDisplayUpdate(true)}
+            >
+                Edit
+            </button>
         )}
         </>
     )

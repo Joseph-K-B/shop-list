@@ -30,6 +30,7 @@ exports[`allows user to add, update, and delete items 1`] = `
         />
         <button
           aria-label="submit new item"
+          class="addBtn"
           type="submit"
         >
           Add Item
@@ -66,6 +67,7 @@ exports[`allows user to add, update, and delete items 1`] = `
               <div>
                 <button
                   aria-label="open delete form"
+                  class="editBtn"
                   type="button"
                 >
                   Remove
@@ -73,6 +75,7 @@ exports[`allows user to add, update, and delete items 1`] = `
               </div>
               <button
                 aria-label="open update form"
+                class="editBtn"
               >
                 Edit
               </button>

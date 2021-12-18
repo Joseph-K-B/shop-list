@@ -25,6 +25,7 @@ exports[`renders item name and controls 1`] = `
       <div>
         <button
           aria-label="open delete form"
+          class="editBtn"
           type="button"
         >
           Remove
@@ -32,6 +33,7 @@ exports[`renders item name and controls 1`] = `
       </div>
       <button
         aria-label="open update form"
+        class="editBtn"
       >
         Edit
       </button>

@@ -6,12 +6,13 @@
 }
 
 .add {
+    box-shadow: 4px 2px black;
     opacity: 70%;
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 12rem;
+    height: 12rem;
     max-width: 10rem;
     border: 0.25rem black solid;
     background-color: #587B7F;

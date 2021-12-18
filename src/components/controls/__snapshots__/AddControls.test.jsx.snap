@@ -24,6 +24,7 @@ exports[`renders controls to input item 1`] = `
     />
     <button
       aria-label="submit new item"
+      class="addBtn"
       type="submit"
     >
       Add Item

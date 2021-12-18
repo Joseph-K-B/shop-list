@@ -4,13 +4,10 @@
 }
 
 .listItem {
-    /* min-height: 15vh; */
-    /* min-width: 10vmax;
-    max-width: 25vmax; */
     background: linear-gradient(#587B7F, black);
     border-radius: 7% 7% 30% 30%;
     opacity: 80%;
-    box-shadow: 4px 2px black ;
+    box-shadow: 4px 2px black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,3 +52,32 @@
     border: 0.125em solid black;
     background-color: black;
 }
+
+.editBtn {
+    width: 4.25rem;
+    border: #587B7F 0.05rem solid;
+    border-radius: 7% 7% 30% 30%;
+    background: none;
+    color: white;
+    margin: 1%;
+}
+
+.editBtn:hover {
+    background: gray;
+    border: white 0.1rem solid;
+}
+
+.addBtn {
+    width: 4.25rem;
+    border: black 0.15rem solid;
+    border-radius: 7% 7% 30% 30%;
+    background: none;
+    color: white;
+    margin: 1%;
+}
+
+.addBtn:hover {
+    background: gray;
+    border: white 0.1rem solid;
+}
+

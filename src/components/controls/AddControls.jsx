@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useUser } from "../../context/UserCtx";
+import css from '../list/ShopList.css'
 
 function AddControls({ onAdded }) {
   const {userName} = useUser();
@@ -21,7 +22,13 @@ function AddControls({ onAdded }) {
           aria-label='new item input'
           onChange={(e) => setName(e.target.value)}
         />
-        <button type="submit" aria-label='submit new item'>Add Item</button>
+          <button 
+            type="submit"
+            className={css.addBtn} 
+            aria-label='submit new item'
+          >
+            Add Item
+          </button>
         </form>
         ) : ( 
         <p>Start shopping</p>
