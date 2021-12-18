@@ -26,6 +26,19 @@
     text-decoration: line-through;
 }
 
-.check {
-    color: gray;
+.check{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: red;
+    font: inherit;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid white;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+}
+
+.check:checked {
+    border: 0.15em solid black;
+    background-color: green;
 }
