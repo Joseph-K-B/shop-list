@@ -11,15 +11,16 @@ it('allows user to add, update, and delete items', async () => {
         </UserProvider>
     );
 
-    const userInput = screen.getByLabelText(/name-input/i)
-    const logBtn = screen.getByLabelText(/log-button/i)
+    const userInput = screen.getByLabelText(/name-input/i);
+    const logBtn = screen.getByLabelText(/log-button/i);
 
     userEvent.type(userInput, 'Izzie');
     userEvent.click(logBtn);
 
+    await screen.findAllByText(/Izzie/i);
+
     const nameInput = await screen.findByLabelText(/new item input/i);
     const submitBtn = await screen.findByLabelText(/submit new item/i);
-
 
     userEvent.type(nameInput, 'name');
     userEvent.click(submitBtn);
@@ -32,6 +33,7 @@ it('allows user to add, update, and delete items', async () => {
     const editBtn = await screen.findByLabelText(/open update form/i);
     const newItem = await screen.findByLabelText(/list-item/i);
     
+    expect(newItem).toBeInTheDocument();
     expect(editBtn).toBeInTheDocument();
 
     userEvent.click(editBtn);
@@ -48,9 +50,14 @@ it('allows user to add, update, and delete items', async () => {
 
     expect(secondItem).toBeInTheDocument();
 
+    
     expect(deleteBtn).toBeInTheDocument();
     expect(nameInput).toBeInTheDocument();
     expect(submitBtn).toBeInTheDocument();
-    expect(newItem).toBeInTheDocument();
+    
+    userEvent.click(deleteBtn);
+
+    // expect(secondItem).toBeFalsy();
+    
     expect(container).toMatchSnapshot();
 });
