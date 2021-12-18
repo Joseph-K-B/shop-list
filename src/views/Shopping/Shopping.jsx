@@ -5,10 +5,7 @@ import ShopList from "../../components/list/ShopList";
 import itemReducer from "../../utils/ItemReducer"
 import css from './Shopping.css';
 
-const initialState = [
-//   {id: 1, name: 'test', done: false},
-//   {id: 2, name: 'test-2', done: false},
-]
+const initialState = []
 
 function Shopping() {
     const [items, dispatch] = useReducer(itemReducer, initialState);

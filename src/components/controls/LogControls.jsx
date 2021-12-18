@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useUser } from '../../context/UserCtx';
+import css from './LogControls.css';
 
 const LogControls = () => {
     const [name, setName] = useState('');
@@ -23,7 +24,13 @@ const LogControls = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
             />
-            <button type='submit' aria-label='log-button'>Log</button>
+            <button 
+                type='submit' 
+                aria-label='log-button'
+                className={css.logIn}
+            >
+                Log
+            </button>
         </div>
     );
    
@@ -38,6 +45,7 @@ const LogControls = () => {
                     {userName ? null : nameSubmit}                    
                     {userName && (
                         <button
+                        className={css.logOut}
                             onClick={() => {
                                 setName('')
                                 setUserName('')

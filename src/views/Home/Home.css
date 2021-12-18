@@ -8,7 +8,7 @@ header {
     min-height: 10vh;
     min-width: 100vw;
     height: var(--heading-height);
-    background: linear-gradient(#587B7F, black);
+    background: linear-gradient(black, #587B7F);
     border-radius: 0 0 85% 85% / 30%;
 }
 
@@ -23,10 +23,11 @@ main {
 }
 
 footer {
+    color: white;
     margin-top: 3%;
     text-align: center;
     min-height: 12vh;
     min-width: 100vw;
-    background-color: #587B7F;
+    background: linear-gradient(#587B7F, black);
     border-radius: 85% / 10% 85% 0 0;
 }

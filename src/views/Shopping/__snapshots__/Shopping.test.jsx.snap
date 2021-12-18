@@ -13,7 +13,9 @@ exports[`allows user to add, update, and delete items 1`] = `
           List for Izzie
         </h3>
         <form>
-          <button>
+          <button
+            class="logOut"
+          >
             Not 
             Izzie
             ?

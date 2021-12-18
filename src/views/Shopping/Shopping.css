@@ -6,14 +6,15 @@
 }
 
 .add {
+    opacity: 70%;
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 10rem;
+    max-height: 12rem;
     max-width: 10rem;
     border: 0.25rem black solid;
-    background-color: #50717b;
+    background-color: #587B7F;
     padding: 5%;
     margin: 5%;
 }
