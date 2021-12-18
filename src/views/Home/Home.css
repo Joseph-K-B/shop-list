@@ -15,11 +15,8 @@ header {
 main {
     min-height: 100vh;
     min-width: 100vw;
-    max-height: 100vmax;
-    max-width: 100vmax;
     color: #A3A6B1;
     background-color: #212121;
-    /* padding: calc(var(--heading-height) + 1.5vw) 4em 0; */
 }
 
 footer {
