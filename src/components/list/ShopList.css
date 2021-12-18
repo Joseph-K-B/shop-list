@@ -21,3 +21,11 @@
     font-size: 1.5rem;
     color: black;
 }
+
+.strike {
+    text-decoration: line-through;
+}
+
+.check {
+    color: gray;
+}

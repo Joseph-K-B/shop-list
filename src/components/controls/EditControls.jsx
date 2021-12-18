@@ -1,12 +1,15 @@
 import React, { useState } from "react";
+import css from '../list/ShopList.css'
 
 function EditControls({item, onChange, onDelete}) {
-    const[displayUpdate, setDisplayUpdate] = useState(false)
+    const[displayUpdate, setDisplayUpdate] = useState(false);
+
     return (
         <>
         <div>
             <input 
-                type='checkbox' 
+                type='checkbox'
+                className={css.check} 
                 value={item.done} 
                 onChange={(e) => 
                     {onChange({...item, done: e.target.checked})

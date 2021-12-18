@@ -17,6 +17,7 @@ exports[`renders item name and controls 1`] = `
     >
       <div>
         <input
+          class="check"
           type="checkbox"
           value="false"
         />

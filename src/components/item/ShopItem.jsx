@@ -9,7 +9,11 @@ function ShopItem({item, onChange, onDelete}) {
     <>
     <section aria-label='list-item'>
       <div className={css.itemInfo}>
-        <h3>{item.name}</h3>
+      {item.done === true ? (
+        <h3 className={css.strike}>{item.name}</h3>
+      ) : (
+        <h3>{item.name}</h3> 
+      )}
       </div>
       <div className={css.itemControls}>
         <EditControls 

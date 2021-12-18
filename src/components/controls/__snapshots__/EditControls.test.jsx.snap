@@ -4,6 +4,7 @@ exports[`renders controls to edit item 1`] = `
 <div>
   <div>
     <input
+      class="check"
       type="checkbox"
       value="false"
     />

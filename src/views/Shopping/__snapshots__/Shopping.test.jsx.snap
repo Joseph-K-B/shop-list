@@ -58,6 +58,7 @@ exports[`allows user to add, update, and delete items 1`] = `
             >
               <div>
                 <input
+                  class="check"
                   type="checkbox"
                   value="false"
                 />
