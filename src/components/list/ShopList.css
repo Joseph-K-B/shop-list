@@ -4,6 +4,9 @@
 }
 
 .listItem {
+    /* min-height: 15vh; */
+    /* min-width: 10vmax;
+    max-width: 25vmax; */
     background: linear-gradient(#587B7F, black);
     border-radius: 7% 7% 30% 30%;
     opacity: 80%;
@@ -18,7 +21,7 @@
 }
 
 .itemInfo {
-    font-size: 1.5rem;
+    font-size: larger;
     color: black;
 }
 
@@ -33,12 +36,22 @@
     font: inherit;
     width: 1.15em;
     height: 1.15em;
-    border: 0.15em solid white;
+    border: 0.125em solid white;
     border-radius: 0.15em;
     transform: translateY(-0.075em);
 }
 
+.check:hover {
+    border: 0.125em solid black;
+    background-color: black;
+}
+
 .check:checked {
-    border: 0.15em solid black;
+    border: 0.125em solid black;
     background-color: green;
+}
+
+.check:checked:hover {
+    border: 0.125em solid black;
+    background-color: black;
 }
