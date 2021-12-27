@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders item name and controls 1`] = `
+<div>
+  <section
+    aria-label="list-item"
+  >
+    <div
+      class="itemInfo"
+    >
+      <h3>
+        test
+      </h3>
+    </div>
+    <div
+      class="itemControls"
+    >
+      <div>
+        <input
+          class="check"
+          type="checkbox"
+          value="false"
+        />
+      </div>
+      <div>
+        <button
+          aria-label="open delete form"
+          class="editBtn"
+          type="button"
+        >
+          Remove
+        </button>
+      </div>
+      <button
+        aria-label="open update form"
+        class="editBtn"
+      >
+        Edit
+      </button>
+    </div>
+  </section>
+</div>
+`;

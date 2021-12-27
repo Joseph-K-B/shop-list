@@ -1,0 +1,30 @@
+.title {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+header {
+    min-height: 10vh;
+    min-width: 100vw;
+    height: var(--heading-height);
+    background: linear-gradient(black, #587B7F);
+    border-radius: 0 0 85% 85% / 30%;
+}
+
+main {
+    min-height: 100vh;
+    min-width: 100vw;
+    color: #A3A6B1;
+    background-color: #212121;
+}
+
+footer {
+    color: white;
+    margin-top: 3%;
+    text-align: center;
+    min-height: 12vh;
+    min-width: 100vw;
+    background: linear-gradient(#587B7F, black);
+    border-radius: 85% / 10% 85% 0 0;
+}

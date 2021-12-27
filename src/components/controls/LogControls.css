@@ -1,0 +1,19 @@
+.logOut {
+    background-color: #587B7F;
+    border: 0;
+    margin: 10%;
+}
+
+.logOut:hover {
+    color: white;
+}
+
+.logIn {
+    background-color: #587B7F;
+    border: 0;
+    margin: 10%;
+}
+
+.logIn:hover {
+    color: white;
+}

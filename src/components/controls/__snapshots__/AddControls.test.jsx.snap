@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders controls to input item 1`] = `
+<div>
+  <section>
+    <h3>
+      List for Izzie
+    </h3>
+    <form>
+      <button
+        class="logOut"
+      >
+        Not 
+        Izzie
+        ?
+      </button>
+    </form>
+  </section>
+  <form>
+    <input
+      aria-label="new item input"
+      type="text"
+      value=""
+    />
+    <button
+      aria-label="submit new item"
+      class="addBtn"
+      type="submit"
+    >
+      Add Item
+    </button>
+  </form>
+</div>
+`;

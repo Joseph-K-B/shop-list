@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders controls to edit item 1`] = `
+<div>
+  <div>
+    <input
+      class="check"
+      type="checkbox"
+      value="false"
+    />
+  </div>
+  <div>
+    <button
+      aria-label="open delete form"
+      class="editBtn"
+      type="button"
+    >
+      Remove
+    </button>
+  </div>
+  <button
+    aria-label="open update form"
+    class="editBtn"
+  >
+    Edit
+  </button>
+</div>
+`;

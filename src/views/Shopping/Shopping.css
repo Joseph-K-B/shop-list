@@ -1,0 +1,25 @@
+.shop {
+    display: grid;
+    max-width: 100vw;
+    grid-template-columns: 1fr 3fr;
+    text-align: center;
+}
+
+.add {
+    box-shadow: 4px 2px black;
+    opacity: 70%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 12rem;
+    max-width: 10rem;
+    border: 0.25rem black solid;
+    background-color: #587B7F;
+    padding: 5%;
+    margin: 5%;
+}
+
+input {
+    max-width: 11vw;
+}
